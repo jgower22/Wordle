@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wordle</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <!--<meta name="viewport" content="width=device-width, user-scalable=no">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <h1>Wordle</h1>
+    <p id="message"></p>
+    <div class="main" id="main">
+        <table class="center">
+            <tbody>
+                <tr>
+                    <td id="0" class="board animate__animated"></td>
+                    <td id="1" class="board animate__animated"></td>
+                    <td id="2" class="board animate__animated"></td>
+                    <td id="3" class="board animate__animated"></td>
+                    <td id="4" class="board animate__animated"></td>
+                </tr>
+                <tr>
+                    <td id="5" class="board animate__animated"></td>
+                    <td id="6" class="board animate__animated"></td>
+                    <td id="7" class="board animate__animated"></td>
+                    <td id="8" class="board animate__animated"></td>
+                    <td id="9" class="board animate__animated"></td>
+                </tr>
+                <tr>
+                    <td id="10" class="board animate__animated"></td>
+                    <td id="11" class="board animate__animated"></td>
+                    <td id="12" class="board animate__animated"></td>
+                    <td id="13" class="board animate__animated"></td>
+                    <td id="14" class="board animate__animated"></td>
+                </tr>
+                <tr>
+                    <td id="15" class="board animate__animated"></td>
+                    <td id="16" class="board animate__animated"></td>
+                    <td id="17" class="board animate__animated"></td>
+                    <td id="18" class="board animate__animated"></td>
+                    <td id="19" class="board animate__animated"></td>
+                </tr>
+                <tr>
+                    <td id="20" class="board animate__animated"></td>
+                    <td id="21" class="board animate__animated"></td>
+                    <td id="22" class="board animate__animated"></td>
+                    <td id="23" class="board animate__animated"></td>
+                    <td id="24" class="board animate__animated"></td>
+                </tr>
+                <tr>
+                    <td id="25" class="board animate__animated"></td>
+                    <td id="26" class="board animate__animated"></td>
+                    <td id="27" class="board animate__animated"></td>
+                    <td id="28" class="board animate__animated"></td>
+                    <td id="29" class="board animate__animated"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <p id="timer"></p>
+    </div>
+    <div class="alphabet" id="alphabet">
+        <table class="center">
+            <tbody>
+                <tr>
+                    <td id="Q" class="letters">Q</td>
+                    <td id="W" class="letters">W</td>
+                    <td id="E" class="letters">E</td>
+                    <td id="R" class="letters">R</td>
+                    <td id="T" class="letters">T</td>
+                    <td id="Y" class="letters">Y</td>
+                    <td id="U" class="letters">U</td>
+                    <td id="I" class="letters">I</td>
+                    <td id="O" class="letters">O</td>
+                    <td id="P" class="letters">P</td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="center">
+            <tbody>
+            <tr>
+                <td id="A" class="letters">A</td>
+                <td id="S" class="letters">S</td>
+                <td id="D" class="letters">D</td>
+                <td id="F" class="letters">F</td>
+                <td id="G" class="letters">G</td>
+                <td id="H" class="letters">H</td>
+                <td id="J" class="letters">J</td>
+                <td id="K" class="letters">K</td>
+                <td id="L" class="letters">L</td>
+            </tr>
+            </tbody>
+        </table>
+        <table class="center">
+            <tbody>
+                <tr>
+                    <td id="Enter" class="letters">&#10003;</td>
+                    <td id="Z" class="letters">Z</td>
+                    <td id="X" class="letters">X</td>
+                    <td id="C" class="letters">C</td>
+                    <td id="V" class="letters">V</td>
+                    <td id="B" class="letters">B</td>
+                    <td id="N" class="letters">N</td>
+                    <td id="M" class="letters">M</td>
+                    <td id="Delete" class="letters">&#10060;</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="app.js"></script>
+</html>

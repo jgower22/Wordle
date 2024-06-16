@@ -1,0 +1,96 @@
+h1 {
+    text-align: center;
+    font-size: 45px;
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    user-select: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+td {
+    display: table-cell;
+    table-layout: fixed;
+}
+
+body {
+    background-color: #121212;
+}
+
+.main {
+    margin-top: 150px;
+    /*position: absolute;
+    top: 25%;
+    bottom: 0;
+    left: 0;
+    right: 0;*/
+
+}
+
+.alphabet {
+    margin-top: 150px;
+    /*position: fixed;
+    bottom: 0;
+    width: 100%;*/
+}
+
+.center {
+    margin: auto;
+}
+
+.board {
+    border: 1px solid gray;
+    width: 50px;
+    height: 50px;
+    /*width: 14vw;
+    height: 8.5vh;*/
+    padding: 5px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-family:  Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    user-select: none;
+}
+
+.letters {
+    border: 1px solid white;
+    width: 50px;
+    height: 50px;
+    /*width: 14vw;
+    height: 7vh;*/
+    padding: 5px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-family:  Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    background-color: darkgray;
+    cursor:pointer;
+    user-select: none;
+}
+
+.letters#Enter {
+    color: green;
+}
+
+#timer {
+    text-align: center;
+    font-size: 30px;
+    font-family:  Arial, Helvetica, sans-serif;
+    color: black;
+    user-select: none;
+}
+
+#message {
+    text-align: center;
+    font-size: 30px;
+    font-family:  Arial, Helvetica, sans-serif;
+    color: black;
+    margin-top: 0px;
+}
+
+
