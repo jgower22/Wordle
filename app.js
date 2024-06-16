@@ -267,7 +267,7 @@ function setLettersToBlack() {
     var tempID = id-1;
     for (let i = 0; i < 5; i++) {
         var cell = document.getElementById(tempID);
-        cell.style.color = "black";
+        cell.style.color = "white";
         tempID--;
     }
 }
